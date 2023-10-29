@@ -1,0 +1,123 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        /*background-color: gray; */
+        background: linear-gradient(to bottom, #3498db, #2980b9);
+
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    h1{
+        padding-left:140px ;
+        background-color: #e9bf3f;
+        border-radius: 20px;
+    }
+    #form-container {
+        background-color: white;
+        /* box-shadow: 5px 5px 5px black; */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+        position: fixed;
+        padding: 100px;
+        border-radius: 20px;
+        width: 48%;
+        margin-right: 10px;
+    }
+    #enrollmentForm {
+        width: 100%;
+        max-width: 400px;
+    }
+    #studentTable {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 48%;
+    }
+
+    #studentTable th, #studentTable td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #studentTable th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    /* Buttons */
+    input[type="button"], .delete-button, input[type="reset"] {
+        background-color: #1e7423;
+        color: white;
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    input[type="button"]:hover, .delete-button:hover, input[type="reset"]:hover {
+        background-color: #11b32e;
+    }
+
+    /* Radio and Checkbox */
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    #name,#email,#website{
+        border-radius: 5px;
+        width: 70%;
+        padding-left: 5px;
+       
+    }
+    img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    /* Delete button styles */
+    .delete-button {
+        background-color: #ff5722;
+    }
+
+    /* Add a vertical line to separate the form and table */
+    .vertical-line {
+        border-left: 1px solid #ddd;
+        height: 100%;
+        margin-left: 10px; /* Adjust the spacing as needed */
+    }
+    #clear{
+        background-color: red;
+    }
+    .rounded-button {
+        background: linear-gradient(to bottom, #3498db, #2980b9);
+        border: none;
+        border-radius: 20px;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .custom-shape::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid #3498db;
+    }
+    @keyframes text-animation {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    
